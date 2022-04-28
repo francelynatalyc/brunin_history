@@ -16,6 +16,10 @@ struct Gif: UIViewRepresentable {
         
         wView.load(data, mimeType: "image/gif", characterEncodingName: "UFT-8", baseURL: url.deletingLastPathComponent())
         
+        wView.isOpaque = false
+        wView.backgroundColor = UIColor.clear
+        wView.scrollView.backgroundColor = UIColor.clear
+        
         return wView
     
 }
