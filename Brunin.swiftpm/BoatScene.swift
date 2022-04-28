@@ -36,13 +36,19 @@ struct BoatScene: View {
                     Button("OK", role: .cancel) { }
             }
             
+            //screaming_brunin
+            Gif (resourceName: "screaming_brunin")
+                .scaleEffect(0.2)
+                .position(x: isAnimation ? -120 : 950, y: 840)
+            
+            
             //boat
             Image ("floating")
                 .scaleEffect(0.12)
                 .position(x: isAnimation ? -100 : 1000, y: 850)
             
             //right button
-                NavigationLink(destination: ChaosScene(), label: {
+                NavigationLink(destination: FinalScene(), label: {
                     Image ("right")
                         .scaleEffect(0.3)
                         .frame(width: 40, height: 40, alignment: .center)

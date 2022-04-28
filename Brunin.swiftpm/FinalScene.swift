@@ -7,7 +7,12 @@ struct FinalScene: View {
     var body: some View {
         ZStack {
             Color("blue_sky").ignoresSafeArea()
-        }
+            
+            HStack {
+                
+            }
+            
+        }.navigationBarHidden(true)
     }
 }
 
