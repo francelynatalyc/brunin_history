@@ -9,6 +9,7 @@ struct MainScreen: View {
 
     var body: some View {
         ZStack {
+            //background
             Color("blue_sky").ignoresSafeArea()
                 
                 HStack {
