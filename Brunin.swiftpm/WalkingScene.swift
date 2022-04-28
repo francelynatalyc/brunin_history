@@ -80,7 +80,6 @@ struct WalkingScene: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 withAnimation(.default .speed(0.05)) {
                     isAnimation.toggle()
-                    
                 }
             }
         }.navigationBarHidden(true)
