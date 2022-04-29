@@ -35,13 +35,12 @@ struct SwimmingScene: View {
                 .offset(x: -310, y: 450)
             
             //right button
-            NavigationLink(destination: SwimmingScene(), label: {
+            NavigationLink(destination: FinalScene(), label: {
                 Image ("right")
                         .scaleEffect(0.3)
                         .frame(width: 40, height: 40, alignment: .center)
                 })
                 .offset(x: 350, y: -420)
-            
 
             //fish
             Image ("fish_1")
@@ -73,7 +72,7 @@ struct SwimmingScene: View {
                 .offset(x: 240, y: ballonAnimation ? -160 : -140)
                 .onTapGesture {
                     showingAlert = true
-                } .alert("Brunin swam and swam to the surface.\n\nGo to the next page.", isPresented: $showingAlert) {
+                } .alert("The boat ended up sinking, so Brunin swam and swam to the surface.\n\nGo to the next page.", isPresented: $showingAlert) {
                     Button("OK", role: .cancel) { }
             }
         }
@@ -89,7 +88,6 @@ struct SwimmingScene: View {
                     isAnimation.toggle()
                 }
             }
-            
 
         }.navigationBarHidden(true)
 

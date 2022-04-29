@@ -67,7 +67,7 @@ struct WalkingScene: View {
                 .offset(x: 235, y: ballonAnimation ? 20 : 40)
                 .onTapGesture {
                     showingAlert = true
-                } .alert("This is Bruno, or Brunin.\n\n He is going on a trip to Tefé in a super cute little boat.\n\nGo to the next page.", isPresented: $showingAlert) {
+                } .alert("This is Bruno, or Brunin.\n\n He is going for a trip in a super cute little boat.\n\nGo to the next page.", isPresented: $showingAlert) {
                     Button("OK", role: .cancel) { }
             }
         }

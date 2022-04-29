@@ -21,7 +21,6 @@ struct Gif: UIViewRepresentable {
         wView.scrollView.backgroundColor = UIColor.clear
         
         return wView
-    
 }
     
     func updateUIView(_ uiView: WKWebView, context: Context) {
