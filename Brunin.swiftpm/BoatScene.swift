@@ -54,7 +54,7 @@ struct BoatScene: View {
                 .onTapGesture {
                     showingAlert = true
                 }
-                .alert("Our friend Brunin's trip was going very well, until a huge boulder caused panic and chaos for all passengers.\n\nGo to the next page.", isPresented: $showingAlert) {
+                .alert("Friend Bruninho's trip is going very well. Getting close to the place, the boat hit a rock causing chaos for all the passengers.\n\nGo to the next page.", isPresented: $showingAlert) {
                     Button("OK", role: .cancel) { }
                     
                 }
@@ -74,8 +74,6 @@ struct BoatScene: View {
             Image ("rock")
                 .scaleEffect(0.9)
                 .position(x: 750, y: 950)
-            
-
             
         }
         .onAppear {
