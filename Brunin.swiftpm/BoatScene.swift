@@ -20,6 +20,24 @@ struct BoatScene: View {
                     .frame(width: 40, height: 40, alignment: .center)
                     .offset(x: 0, y: 20)
             }
+            //first cloud
+            Image ("cloud_1")
+                .scaleEffect(0.5)
+                .frame(width: 40, height: 40, alignment: .center)
+                .offset(x: 300, y: -150)
+            
+            //second cloud
+            Image ("cloud_2")
+                .scaleEffect(0.4)
+                .frame(width: 40, height: 40, alignment: .center)
+                .offset(x: -120, y: -300)
+            
+            //third cloud
+            Image ("cloud_3")
+                .scaleEffect(0.5)
+                .frame(width: 40, height: 40, alignment: .center)
+                .offset(x: -300, y: 40)
+            
             //snake
             Image ("snake")
                 .scaleEffect(0.12)
@@ -32,7 +50,7 @@ struct BoatScene: View {
                 .offset(x: 70, y: ballonAnimation ? 40 : 20)
                 .onTapGesture {
                     showingAlert = true
-                } .alert("This is Bruno, or Brunin.\n\n He is going on a trip to Tefé in a super cute little boat.\n\nGo to the next page.", isPresented: $showingAlert) {
+                } .alert("Our friend Brunin's trip was going very well, until a huge boulder caused panic and chaos for all passengers.\n\nGo to the next page.", isPresented: $showingAlert) {
                     Button("OK", role: .cancel) { }
             }
             
@@ -48,7 +66,7 @@ struct BoatScene: View {
                 .position(x: isAnimation ? -100 : 1000, y: 850)
             
             //right button
-                NavigationLink(destination: FinalScene(), label: {
+                NavigationLink(destination: SwimmingScene(), label: {
                     Image ("right")
                         .scaleEffect(0.3)
                         .frame(width: 40, height: 40, alignment: .center)

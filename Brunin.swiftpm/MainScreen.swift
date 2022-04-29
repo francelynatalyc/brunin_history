@@ -55,6 +55,7 @@ struct MainScreen: View {
                 .offset(x: 0, y: 350)
 
             }.navigationBarHidden(true)
+
         
     }
 }
